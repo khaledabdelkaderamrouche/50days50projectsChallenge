@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height:100%;
+  margin: 0;
+  padding:0;
+  overflow-x: hidden;
+
+}
+div {
+  width: 50%;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  transition: width 0.5s linear;
+}
+div:hover {
+  width: 100%;
+}
+.js{
+  background-image: url('img/js.png');
+}
+.php{
+  background-image: url('img/php.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+h1{
+  color: white;
+  position: absolute;
+  top: 50%;
+  font-size: xxx-large;
+}
+.button{
+  position: absolute;
+  top: 62%;
+  width: 320px;
+  height: 80px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  border-radius: 19px;
+  font-size: xx-large;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.php .button:hover{
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+}
+.js .button:hover{
+
+  background-color: #F0DB4F;
+  border: 1px solid black;
+  color: black;
+}
+@media (max-width: 1024px){
+  h1{
+    top: 30%;
+    font-size: xx-large;
+  }
+  .button{
+
+    top: 50%;
+    width: 300px;
+    height: 70px;
+    font-size: x-large;
+    padding: 10px;
+    font-weight: 600;
+  }
+}@media (max-width: 768px){
+  h1{
+    top: 35%;
+    font-size: x-large;
+  }
+  .button{
+
+    top: 50%;
+    width: 200px;
+    height: 50px;
+    font-size: x-large;
+    padding: 10px;
+    font-weight: 600;
+  }
+}
