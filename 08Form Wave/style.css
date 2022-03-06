@@ -28,6 +28,7 @@ body {
   margin: 250px;
   padding: 40px;
   border-radius: 11px;
+  z-index:1;
 }
 .loginBox h1{
   color: white;
@@ -43,6 +44,7 @@ body {
   border: none;
   border-bottom: 3px solid white;
   outline:none;
+  z-index: 2;
 }
 .loginBox input::placeholder {
    color: white;
@@ -66,7 +68,8 @@ body {
   left: 10px;
   display: flex;
   flex-direction: row;
-  transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.21,0.8)
+  transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.21,0.8);
+  z-index: -1;
 
 }
 .loginBox .label-placeholder span span{
