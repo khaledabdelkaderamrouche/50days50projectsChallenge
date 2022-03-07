@@ -1,0 +1,81 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Mulish+Regular:wght@400;700&display=swap');*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Mulish', 'Helvetica Neue',sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height:100%;
+  margin: 0;
+  padding:0;
+  overflow-x: hidden;
+}
+.container{
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.container .sound-box{
+  height: 50vh;
+  width: 33.33vw;
+  color: white;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.sound-box:nth-child(1){
+  background-color:#55efc4
+}
+.sound-box:nth-child(2){
+  background-color:#81ecec
+}
+.sound-box:nth-child(3){
+  background-color:#74b9ff
+}
+.sound-box:nth-child(4){
+  background-color:#a29bfe
+}
+.sound-box:nth-child(5){
+  background-color:#fab1a0
+}
+.sound-box:nth-child(6){
+  background-color:#ffeaa7
+}
+@media (max-width: 1024px){
+  h1{
+    top: 30%;
+    font-size: xx-large;
+  }
+  .button{
+
+    top: 50%;
+    width: 300px;
+    height: 70px;
+    font-size: x-large;
+    padding: 10px;
+    font-weight: 600;
+  }
+}@media (max-width: 768px){
+  h1{
+    top: 35%;
+    font-size: x-large;
+  }
+  .button{
+
+    top: 50%;
+    width: 200px;
+    height: 50px;
+    font-size: x-large;
+    padding: 10px;
+    font-weight: 600;
+  }
+}
