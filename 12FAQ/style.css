@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:#fff;
+  overflow: hidden;
+  height:100vh;
+}
+.container{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: #2d3436;
+  FONT-WEIGHT: 600;
+  margin:50px;
+}
+.container .faq-element{
+  display: flex;
+  width: 30vw;
+  height: 20vh;
+  flex-direction: column;
+  text-align: left;
+  align-items: flex-start;
+  justify-content: space-around;
+  background-color:#dfe6e9;
+  box-shadow: -1px 0 12px 4px rgba(0,0,0,0.15);
+  -webkit-box-shadow: -1px 0 12px 4px rgba(0,0,0,0.15);
+  -moz-box-shadow: -1px 0 12px 4px rgba(0,0,0,0.15);
+
+  color: #2d3436;
+  margin: 30px;
+  border-radius: 19px;
+  padding: 25px;
+  overflow: hidden;
+  transition: height 0.5s linear;
+}
+.container .faq-element p{
+  font-size:larger;
+  opacity: 1;
+  display: block;
+}
+.container .faq-element.collapsed{
+  background-color: #fff;
+  height:10vh;
+}
+.container .faq-element.collapsed p{
+  display:none;
+  opacity: 0;
+}
+.container .faq-element h1{
+  text-align: left;
+  font-size:x-large;
+}
+.container .faq-element span{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.container .faq-element.collapsed span i{
+  font-size: xx-large;
+  cursor: pointer;
+  transform-origin: top left;
+  transform: rotate(0deg)  translate(0,0);
+  transition: transform 0.5s linear;
+}
+.container .faq-element span i{
+  font-size: xx-large;
+  cursor: pointer;
+  transform-origin: top left;
+  transform: rotate(180deg)  translate(-15px,-30px);
+  transition: transform 0.5s linear;
+}
+@media (max-width: 1215px) {
+  .container .faq-element{
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .container .faq-element span h1{
+    font-size:smaller;
+  }
+}
+@media (max-width: 500px) {
+  .container .faq-element p{
+    font-size:small;
+  }
+}
